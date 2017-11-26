@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义Popup示例</title>
+    <link rel="stylesheet/less" type="text/css" href="./index.less">
+    <script src="./lib/less.min.js" type="text/javascript"></script>
+    <script>
+        //配置扩展解模块析引用路径
+        dojoConfig = {
+            parseOnLoad: true,
+            async: true,
+            packages: [{
+                name: "Popup",
+                location: location.pathname.replace("/example/index.html", "\/src")
+            }]
+        };
+    </script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.5/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.5/"></script>
+    
+    <script src="./data.js"></script>   
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="viewDiv"></div>
+</body>
+
+</html>

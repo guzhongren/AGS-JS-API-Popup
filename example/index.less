@@ -1,0 +1,71 @@
+html,body,#viewDiv{
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin: 0;
+}
+/* 机电进 */
+@borderRadius: 3px;
+.content-base{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+#tempPopupId{
+    border-radius: @borderRadius;
+    .jidianjin{
+        // background-color: blue;
+        .title{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #367ad8;
+            color: #fff;
+            font-size: 13px;
+            border-top-left-radius: @borderRadius;
+            border-top-right-radius: @borderRadius;
+            span{
+                padding: 5px;
+            }
+        }
+        .line{
+            border-width: 2px;
+            height: 1px;
+            width: 97%;
+            background-color: #bcbcbc;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom-left-radius: @borderRadius;
+            border-bottom-right-radius: @borderRadius;
+            
+            .content-title{
+                &:extend(.content-base);
+                color: #bcbcbc;
+                font-size: 13px;
+                padding: 5px;
+                span{
+                    width: percentage(100/3);
+                    text-align: center;
+                } 
+            }
+            .content-value{
+                &:extend(.content-base);
+                color: #5989cc;
+                font-size: 22px;
+                padding: 10px;
+                span{
+                    width: percentage(100/3);
+                    text-align: center;
+                }        
+            }
+        }
+    }
+}
