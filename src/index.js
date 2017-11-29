@@ -28,7 +28,7 @@ define([
          * 显示pop
          * @description 弹出框的位置为鼠标点右下角5px
          * @param mapPoint {Point} 鼠标经过的点
-         * @param content {string| HTML} 要在弹窗框中显示的内容
+         * @param content {string} 要在弹窗框中显示的内容
          * @param style{CSS | style Object} 弹出框的样式，默认样式为"width": "300px", "z-index": "888", "position": "absolute"
          */
         show: function(mapPoint, content, style){
